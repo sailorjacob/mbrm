@@ -41,11 +41,11 @@ export default function Navigation() {
   return (
     <>
       {/* Mobile Header */}
-      <div className="md:hidden fixed top-0 left-0 right-0 bg-amber-900 text-stone-50 z-50 p-4 flex justify-between items-center shadow-lg">
+      <div className="md:hidden fixed top-0 left-0 right-0 bg-stone-100 text-gray-900 z-50 p-4 flex justify-between items-center shadow-lg border-b border-stone-200">
         <h1 className="text-2xl font-bold">mbrm</h1>
         <button
           onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
-          className="text-stone-50 focus:outline-none"
+          className="text-gray-900 focus:outline-none"
         >
           <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             {isMobileMenuOpen ? (
@@ -59,8 +59,8 @@ export default function Navigation() {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div className="md:hidden fixed inset-0 bg-amber-900 bg-opacity-95 z-40" onClick={() => setIsMobileMenuOpen(false)}>
-          <div className="fixed top-16 left-0 right-0 bg-amber-900 text-stone-50 p-6">
+        <div className="md:hidden fixed inset-0 bg-gray-900 bg-opacity-50 z-40" onClick={() => setIsMobileMenuOpen(false)}>
+          <div className="fixed top-16 left-0 right-0 bg-stone-50 text-gray-900 p-6 shadow-lg">
             <nav>
               <ul className="space-y-4">
                 <li>
@@ -68,7 +68,7 @@ export default function Navigation() {
                     href="/"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block text-lg font-medium py-3 px-4 rounded-md transition-colors ${
-                      isActive("/") ? "bg-stone-100 text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50 hover:bg-amber-800"
+                      isActive("/") ? "bg-gray-900 text-white font-bold" : "text-gray-700 hover:text-gray-900 hover:bg-stone-100"
                     }`}
                   >
                     Home
@@ -79,7 +79,7 @@ export default function Navigation() {
                     href="/courses"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block text-lg font-medium py-3 px-4 rounded-md transition-colors ${
-                      isActive("/courses") ? "bg-stone-100 text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50 hover:bg-amber-800"
+                      isActive("/courses") ? "bg-gray-900 text-white font-bold" : "text-gray-700 hover:text-gray-900 hover:bg-stone-100"
                     }`}
                   >
                     Courses
@@ -90,7 +90,7 @@ export default function Navigation() {
                     href="/articles"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block text-lg font-medium py-3 px-4 rounded-md transition-colors ${
-                      isActive("/articles") ? "bg-stone-100 text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50 hover:bg-amber-800"
+                      isActive("/articles") ? "bg-gray-900 text-white font-bold" : "text-gray-700 hover:text-gray-900 hover:bg-stone-100"
                     }`}
                   >
                     Articles
@@ -101,7 +101,7 @@ export default function Navigation() {
                     href="/contact"
                     onClick={() => setIsMobileMenuOpen(false)}
                     className={`block text-lg font-medium py-3 px-4 rounded-md transition-colors ${
-                      isActive("/contact") ? "bg-stone-100 text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50 hover:bg-amber-800"
+                      isActive("/contact") ? "bg-gray-900 text-white font-bold" : "text-gray-700 hover:text-gray-900 hover:bg-stone-100"
                     }`}
                   >
                     Contact
@@ -116,11 +116,11 @@ export default function Navigation() {
       {/* Desktop Sidebar */}
       <div 
         ref={sidebarRef}
-        className="hidden md:flex w-80 bg-gradient-to-b from-amber-900 to-amber-950 text-stone-50 flex-col h-screen relative overflow-hidden shadow-2xl"
+        className="hidden md:flex w-80 bg-gradient-to-b from-stone-100 to-stone-200 text-gray-900 flex-col h-screen relative overflow-hidden shadow-lg border-r border-stone-300"
       >
         {/* Animated Mouse Follower */}
         <div
-          className={`absolute w-16 h-16 bg-gradient-to-r from-orange-400 to-amber-500 rounded-full opacity-25 blur-xl transition-all duration-300 ease-out pointer-events-none ${
+          className={`absolute w-16 h-16 bg-gradient-to-r from-stone-300 to-stone-400 rounded-full opacity-20 blur-xl transition-all duration-300 ease-out pointer-events-none ${
             isHovering ? 'scale-100' : 'scale-0'
           }`}
           style={{
@@ -131,7 +131,7 @@ export default function Navigation() {
         
         {/* Logo */}
         <div className="p-8 pt-24 pb-16 pl-12 relative z-10">
-          <h1 className="text-4xl font-bold text-stone-100">mbrm</h1>
+          <h1 className="text-4xl font-bold text-gray-900">mbrm</h1>
         </div>
 
         {/* Navigation */}
@@ -141,12 +141,12 @@ export default function Navigation() {
               <Link
                 href="/"
                 className={`block text-base font-medium transition-all duration-300 ease-out py-2 px-3 relative group ${
-                  isActive("/") ? "text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50"
+                  isActive("/") ? "text-white font-bold" : "text-gray-700 hover:text-gray-900"
                 }`}
               >
                 <span className="relative z-10">Home</span>
                 <div className={`absolute inset-0 rounded-md transition-all duration-300 ease-out ${
-                  isActive("/") ? "bg-stone-100 transform scale-100" : "bg-amber-800 transform scale-0 group-hover:scale-100"
+                  isActive("/") ? "bg-gray-900 transform scale-100" : "bg-stone-300 transform scale-0 group-hover:scale-100"
                 }`} />
               </Link>
             </li>
@@ -154,12 +154,12 @@ export default function Navigation() {
               <Link
                 href="/courses"
                 className={`block text-base font-medium transition-all duration-300 ease-out py-2 px-3 relative group ${
-                  isActive("/courses") ? "text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50"
+                  isActive("/courses") ? "text-white font-bold" : "text-gray-700 hover:text-gray-900"
                 }`}
               >
                 <span className="relative z-10">Courses</span>
                 <div className={`absolute inset-0 rounded-md transition-all duration-300 ease-out ${
-                  isActive("/courses") ? "bg-stone-100 transform scale-100" : "bg-amber-800 transform scale-0 group-hover:scale-100"
+                  isActive("/courses") ? "bg-gray-900 transform scale-100" : "bg-stone-300 transform scale-0 group-hover:scale-100"
                 }`} />
               </Link>
             </li>
@@ -167,12 +167,12 @@ export default function Navigation() {
               <Link
                 href="/articles"
                 className={`block text-base font-medium transition-all duration-300 ease-out py-2 px-3 relative group ${
-                  isActive("/articles") ? "text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50"
+                  isActive("/articles") ? "text-white font-bold" : "text-gray-700 hover:text-gray-900"
                 }`}
               >
                 <span className="relative z-10">Articles</span>
                 <div className={`absolute inset-0 rounded-md transition-all duration-300 ease-out ${
-                  isActive("/articles") ? "bg-stone-100 transform scale-100" : "bg-amber-800 transform scale-0 group-hover:scale-100"
+                  isActive("/articles") ? "bg-gray-900 transform scale-100" : "bg-stone-300 transform scale-0 group-hover:scale-100"
                 }`} />
               </Link>
             </li>
@@ -180,12 +180,12 @@ export default function Navigation() {
               <Link
                 href="/contact"
                 className={`block text-base font-medium transition-all duration-300 ease-out py-2 px-3 relative group ${
-                  isActive("/contact") ? "text-amber-900 font-bold" : "text-stone-200 hover:text-stone-50"
+                  isActive("/contact") ? "text-white font-bold" : "text-gray-700 hover:text-gray-900"
                 }`}
               >
                 <span className="relative z-10">Contact</span>
                 <div className={`absolute inset-0 rounded-md transition-all duration-300 ease-out ${
-                  isActive("/contact") ? "bg-stone-100 transform scale-100" : "bg-amber-800 transform scale-0 group-hover:scale-100"
+                  isActive("/contact") ? "bg-gray-900 transform scale-100" : "bg-stone-300 transform scale-0 group-hover:scale-100"
                 }`} />
               </Link>
             </li>

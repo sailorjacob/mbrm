@@ -21,62 +21,62 @@ export default function CoursesPage() {
       <div className="flex-1 p-4 md:p-12 h-screen overflow-y-auto pt-16 md:pt-12 bg-gradient-to-br from-stone-50 to-stone-100">
         <div className="max-w-4xl mx-auto">
           <div className="mb-16 mt-8">
-            <h2 className="text-sm font-medium text-amber-800 tracking-wider uppercase mb-8">COURSES</h2>
+            <h2 className="text-sm font-medium text-gray-600 tracking-wider uppercase mb-8">COURSES</h2>
           </div>
 
           <div className="space-y-12">
             {/* About MBRM Section */}
             <div className="mb-16">
-              <h2 className="text-3xl font-bold text-amber-900 mb-12 text-center">ABOUT MBRM</h2>
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">ABOUT MBRM</h2>
             </div>
 
-            <div className="bg-stone-100 p-6 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">In-Person Group Workshops (Summer and Fall)</h3>
-              <ul className="text-amber-800 leading-relaxed mb-4 space-y-2">
+            <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">In-Person Group Workshops (Summer and Fall)</h3>
+              <ul className="text-gray-700 leading-relaxed mb-4 space-y-2">
                 <li>• Focused on Faculty Standards, Curriculum Standards, Assessment Standards, and Evaluation Standards.</li>
                 <li>• Interactive exercises including rigor alignment and curriculum decoding to ensure alignment across faculty, curriculum, and assessment.</li>
                 <li>• Learn how to create clear, intentional alignment between accreditation standards, ensuring all program elements reinforce one another for maximum impact.</li>
               </ul>
             </div>
 
-            <hr className="border-amber-200" />
+            <hr className="border-stone-300" />
 
-            <div className="bg-stone-100 p-6 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">Virtual Evaluation Standard Calibration Sessions</h3>
-              <p className="text-amber-800 leading-relaxed mb-4">
+            <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Virtual Evaluation Standard Calibration Sessions</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
                 Targeted virtual sessions focused specifically on mastering the evaluation standard calibration tool to strengthen program evaluation readiness.
               </p>
             </div>
 
-            <hr className="border-amber-200" />
+            <hr className="border-stone-300" />
 
-            <div className="bg-stone-100 p-6 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">Accreditation Application Support</h3>
-              <ul className="text-amber-800 leading-relaxed mb-4 space-y-2">
+            <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Accreditation Application Support</h3>
+              <ul className="text-gray-700 leading-relaxed mb-4 space-y-2">
                 <li>• Personalized support throughout the accreditation application process.</li>
                 <li>• Guidance on developing application materials that clearly demonstrate how your program aligns with accreditation standards and tells a compelling, cohesive story of program excellence.</li>
               </ul>
             </div>
 
-            <hr className="border-amber-200" />
+            <hr className="border-stone-300" />
 
-            <div className="bg-stone-100 p-6 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">Program Excellence Certification</h3>
-              <p className="text-amber-800 leading-relaxed mb-4">
+            <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Program Excellence Certification</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
                 Comprehensive certification program designed to enhance dual credit program management and evaluation
                 skills.
               </p>
-              <div className="text-sm text-amber-700">Duration: 6 weeks | Format: Online</div>
+              <div className="text-sm text-gray-600">Duration: 6 weeks | Format: Online</div>
             </div>
 
-            <hr className="border-amber-200" />
+            <hr className="border-stone-300" />
 
-            <div className="bg-stone-100 p-6 rounded-lg shadow-sm">
-              <h3 className="text-2xl font-bold text-amber-900 mb-4">Quality Assurance Fundamentals</h3>
-              <p className="text-amber-800 leading-relaxed mb-4">
+            <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Quality Assurance Fundamentals</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
                 Essential course covering the fundamentals of quality assurance in educational program management.
               </p>
-              <div className="text-sm text-amber-700">Duration: 4 weeks | Format: Hybrid</div>
+              <div className="text-sm text-gray-600">Duration: 4 weeks | Format: Hybrid</div>
             </div>
 
             <hr className="border-gray-200 my-16" />
