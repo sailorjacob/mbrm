@@ -4,7 +4,7 @@ import Link from "next/link"
 import { useState, useEffect, useRef } from "react"
 import { usePathname } from "next/navigation"
 
-export default function HomePage() {
+export default function Navigation() {
   const pathname = usePathname()
   const sidebarRef = useRef<HTMLDivElement>(null)
   const [mousePosition, setMousePosition] = useState({ x: 0, y: 0 })
@@ -39,7 +39,7 @@ export default function HomePage() {
   }, [])
 
   return (
-    <div className="flex h-screen bg-white">
+    <>
       {/* Mobile Header */}
       <div className="md:hidden fixed top-0 left-0 right-0 bg-black text-white z-50 p-4 flex justify-between items-center">
         <h1 className="text-2xl font-bold">mbrm</h1>
@@ -192,45 +192,6 @@ export default function HomePage() {
           </ul>
         </nav>
       </div>
-
-      {/* Main Content */}
-      <div className="flex-1 h-screen overflow-y-auto bg-gradient-to-br from-gray-50 to-gray-100 md:ml-0">
-        {/* Hero Section */}
-        <div className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-blue-600 via-purple-700 to-indigo-800 pt-16 md:pt-0">
-          <div className="absolute inset-0 bg-black bg-opacity-40"></div>
-          <div className="relative z-10 text-center text-white px-4 md:px-8 max-w-4xl mx-auto">
-            <h1 className="text-3xl md:text-6xl font-bold mb-6 md:mb-8 leading-tight">
-              Strengthening Dual Credit Program Design, Leadership and Efficacy
-            </h1>
-            <p className="text-lg md:text-xl mb-8 md:mb-12 leading-relaxed opacity-90">
-              Offering in-depth on-boarding & training for dual credit leaders, staff and teams!
-            </p>
-            <button className="bg-transparent border-2 border-white text-white px-8 md:px-12 py-3 md:py-4 text-base md:text-lg font-medium hover:bg-white hover:text-gray-900 transition-all duration-300 transform hover:scale-105">
-              REGISTER ONLINE
-            </button>
-          </div>
-          
-          {/* Floating Animation Elements */}
-          <div className="absolute top-20 left-20 w-4 h-4 bg-white opacity-20 rounded-full animate-pulse"></div>
-          <div className="absolute bottom-32 right-32 w-6 h-6 bg-blue-300 opacity-30 rounded-full animate-bounce" style={{animationDelay: '0.5s'}}></div>
-          <div className="absolute top-1/3 right-20 w-3 h-3 bg-purple-300 opacity-25 rounded-full animate-pulse" style={{animationDelay: '1s'}}></div>
-        </div>
-
-        {/* Events Section */}
-        <div className="p-4 md:p-12">
-          <div className="max-w-4xl mx-auto">
-            <div className="mb-8 md:mb-16 mt-4 md:mt-8">
-              <h2 className="text-sm font-medium text-gray-500 tracking-wider uppercase mb-4 md:mb-8">UPCOMING EVENTS</h2>
-            </div>
-            
-            {/* Coming Soon - Events will be added here */}
-            <div className="text-center py-20">
-              <h3 className="text-2xl font-bold text-gray-900 mb-4">Events Coming Soon</h3>
-              <p className="text-gray-600">Stay tuned for upcoming workshops and training sessions.</p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
+    </>
   )
 }
