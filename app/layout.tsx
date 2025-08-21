@@ -4,7 +4,7 @@ import { GeistMono } from 'geist/font/mono'
 import './globals.css'
 
 export const metadata: Metadata = {
-  title: 'MBRM - Dual Credit Program Excellence',
+  title: 'Program Excellence Workshop',
   description: 'Strengthening Dual Credit Program Design, Leadership and Efficacy',
   generator: 'v0.app',
 }
