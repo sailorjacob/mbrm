@@ -25,11 +25,6 @@ export default function CoursesPage() {
           </div>
 
           <div className="space-y-12">
-            {/* About MBRM Section */}
-            <div className="mb-16">
-              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">ABOUT MBRM</h2>
-            </div>
-
             <div className="bg-stone-50 p-6 rounded-lg shadow-sm border border-stone-200">
               <h3 className="text-2xl font-bold text-gray-900 mb-4">In-Person Group Workshops (Summer and Fall)</h3>
               <ul className="text-gray-700 leading-relaxed mb-4 space-y-2">
