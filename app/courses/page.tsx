@@ -72,6 +72,41 @@ export default function CoursesPage() {
           </div>
 
           <div className="space-y-12">
+            {/* About MBRM Section */}
+            <div className="mb-16">
+              <h2 className="text-3xl font-bold text-gray-900 mb-12 text-center">ABOUT MBRM</h2>
+            </div>
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">In-Person Group Workshops (Summer and Fall)</h3>
+              <ul className="text-gray-700 leading-relaxed mb-4 space-y-2">
+                <li>• Focused on Faculty Standards, Curriculum Standards, Assessment Standards, and Evaluation Standards.</li>
+                <li>• Interactive exercises including rigor alignment and curriculum decoding to ensure alignment across faculty, curriculum, and assessment.</li>
+                <li>• Learn how to create clear, intentional alignment between accreditation standards, ensuring all program elements reinforce one another for maximum impact.</li>
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Virtual Evaluation Standard Calibration Sessions</h3>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Targeted virtual sessions focused specifically on mastering the evaluation standard calibration tool to strengthen program evaluation readiness.
+              </p>
+            </div>
+
+            <hr className="border-gray-200" />
+
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900 mb-4">Accreditation Application Support</h3>
+              <ul className="text-gray-700 leading-relaxed mb-4 space-y-2">
+                <li>• Personalized support throughout the accreditation application process.</li>
+                <li>• Guidance on developing application materials that clearly demonstrate how your program aligns with accreditation standards and tells a compelling, cohesive story of program excellence.</li>
+              </ul>
+            </div>
+
+            <hr className="border-gray-200" />
+
             <div>
               <h3 className="text-2xl font-bold text-gray-900 mb-4">Program Excellence Certification</h3>
               <p className="text-gray-700 leading-relaxed mb-4">
